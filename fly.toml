@@ -1,4 +1,4 @@
-app = "mixify-realtime"
+app = "realtime"
 primary_region = "cdg"
 
 [build]
