@@ -1,0 +1,16 @@
+app = "mixify-realtime"
+primary_region = "cdg"
+
+[build]
+
+[[services]]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  processes = ["app"]
+
+  [[services.ports]]
+    port = 443
+    protocol = "tcp"
+    handlers = ["tls", "http"]
